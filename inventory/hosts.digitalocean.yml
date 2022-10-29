@@ -16,4 +16,3 @@ groups:
 compose:
   ansible_host: do_networks.v4 | selectattr('type','eq','public')
     | map(attribute='ip_address') | first
-
